@@ -81,6 +81,7 @@ class TodoController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+    
     public function update(CreateTodoRequest $request, $id)
     {
         $todo = Auth::user()->todos()->findOrFail($id);
